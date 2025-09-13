@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    
+    <html>
+        <head>
+            <title>Encyklopedia broni palnej</title>
+        <style>
+            .section {
+                display: none;
+                margin-top: 20px;
+            }
+            .section.active {
+                display: block;
+            }
+        </style>
+        </head>
+        <body>
+            <h1>Encyklopedia broni palnej</h1>
+    <!-- Pasek zakładek -->
+            <div class="navbar">
+                <a href="#" onclick="showSection('krotka')">Broń krótka</a>
+                <p>      </p>
+                <a href="#" onclick="showSection('dluga')">Broń długa</a>
+                <p>      </p>
+                <a href="#" onclick="showSection('amunicja')">Amunicja</a>
+                <p>      </p>
+                <!--<a href="#" onclick="showSection('historia')">Historia</a>-->
+            </div>
+
+
+
+            <div id="krotka" class="section">
+                <h2>Broń krótka</h2>
+                <p>Tu znajdziesz informacje o broni krótkiej.</p>
+                <a href="#" onclick="showSection('Glock')">Glock</a>
+
+
+
+
+                
+
+
+
+                
+            </div>
+            
+            <div id="dluga" class="section">
+                <h2>Broń długa</h2>
+                <p>Tu znajdziesz informacje o broni długiej.</p>
+            </div>
+
+            <div id="amunicja" class="section">
+                <h2>Amunicja</h2>  
+                <p>Tu znajdziesz informacje o amunicji.</p>
+            </div>
+
+            <!--<div id="historia" class="section">
+                <h2>Historia broni palnej</h2>
+                <p>Tu znajdziesz informacje o historii broni palnej.</p>
+            </div> -->
+
+            
+            
+
+            <div id="Glock" class="section">
+                <h2>Broń krótka</h2>
+                <a href="g17.html">Glock 17</a>
+                <p>     </p>
+                <a href="g19.html">Glock 19</a>
+                <!-- Dodaj kolejne linki według potrzeb -->
+            </div>
+
+
+
+
+
+            
+                <script>
+                    function showSection(id) {
+            // Ukryj wszystkie sekcje
+                        document.querySelectorAll('.section').forEach(function(sec) {
+                            sec.classList.remove('active');
+                        });
+            // Pokaż wybraną sekcję
+                    document.getElementById(id).classList.add('active');
+                        }
+                </script>
+
+
+
+
+
+
+
+            
+
+
+
+        </body>
+
+
+    </html>
+</DOCTYPE html>
+
+         
+
+
+
+
+
+
+
